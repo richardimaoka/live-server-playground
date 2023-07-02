@@ -3,17 +3,54 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
+    <style>
+      .aa {
+        max-width: 600px;
+      }
+
+      .modal {
+        padding: 8px;
+        background: rgba(255, 255, 255, 0.8);
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+      }
+
+      body {
+        background-color: #3c3c3c;
+        font-family: "Noto Sans JP", sans-serif;
+      }
+
+      .image-wrapper {
+        display: flex;
+        justify-content: center;
+      }
+
+      .main-container {
+        display: flex;
+        justify-content: center;
+      }
+    </style>
   </head>
   <body>
-    <iframe
-      width="560"
-      height="315"
-      src="https://www.youtube.com/embed/M7lc1UVf-VE?clip=Ugkxpk2k0_Ni2FjtYtQkxKTo1mhV2EU_dEiu&amp;clipt=EISwAxiM1wM&autoplay=1&mute=1&origin=http://example.com"
-      title="YouTube video player"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      allowfullscreen
-    ></iframe>
+    <div class="main-container">
+      <div class="aa">
+        <div class="modal">
+          ボタンを押すとGoogleアカウントを選択する画面に遷移し
+        </div>
+        <div class="image-wrapper">
+          <img
+            width="375"
+            src="/images/sign-in-with-google-1-3png.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
   </body>
 </html>
